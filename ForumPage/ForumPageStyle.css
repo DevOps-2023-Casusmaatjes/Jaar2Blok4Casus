@@ -18,6 +18,8 @@
 
     grid-column-start: 1;
     grid-column-end: -1;
+
+    margin-top: 50px;
 }
 
 .category-table {

@@ -18,57 +18,6 @@ body {
 
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70px;
-    padding: 20px 100px;
-    background: rgba(48, 41, 144, 0.514);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    backdrop-filter: blur(40px);
-}
-
-.logo {
-    font-size: 2em;
-    color: white;
-    user-select: none;
-}
-
-.navigation a {
-    position: relative;
-    font-size: 1.0em;
-    color: white;
-    text-decoration: none;
-    font-weight: 470;
-    margin-left: 40px;
-}
-
-.navigation a::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: white;
-    margin-left: 40px;
-    border-radius: 5px;
-    left: -40px;
-    bottom: -6px;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform .4s;
-}
-
-.navigation a:hover::after{
-    transform-origin: right;
-    transform: scaleX(1);
-}
-
-
 .navigation .btnLogin-popup {
     width: 130px;
     height: 40px;
@@ -121,8 +70,6 @@ header {
     padding: 40px;;
 
 }
-
-
 
 .wrapper .form-box.register{
     position: absolute;

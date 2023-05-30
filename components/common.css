@@ -1,4 +1,6 @@
 /*Use this for consistent themes throughout the entire forum.*/
+/*This is the default theme.*/
+/*specific changes to this theme are deemed to be made in a seperacte css file within the same folder as the page folder.*/
 @import url("https://fonts.googleapis.com/css?family=Arial");
 
 * {
@@ -15,6 +17,7 @@ header {
     width: 100%;
     height: 70px;
     padding: 20px 100px;
+
     background: rgba(48, 41, 144, 0.514);
     display: flex;
     justify-content: space-between;
@@ -66,7 +69,7 @@ header {
 
 body {
     margin: 0;
-    background-color: lightgray;
+    background-color:rgba(48, 41, 144, 0.514);
     width: 100vw;
     height: 100vh;
 
@@ -85,6 +88,7 @@ body {
 
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 50px;
 }
 
 .header {

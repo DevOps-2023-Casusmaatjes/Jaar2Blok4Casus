@@ -1,0 +1,45 @@
+
+#contributors {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contributors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contributors ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contributors li {
+    margin: 0 10px;
+}
+
+.contributor {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.contributor img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contributor h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contributor p {
+    font-size: 14px;
+}
