@@ -19,60 +19,82 @@
             <a href="../index.html">Home</a>
             <a href="../ProfilePage/Profile.html">Profile</a>
             <a href="#">Store</a>
-            <a href="../ForumPage/Forum.html">Forum</a>
+            <a href="#">Forum</a>
             <a href="#">About</a>
         </nav>
     </header>
-    <div id="container">
-        <div id="left-container">
-            <div id="profile-image"></div>
-            <div id="chat-menu">
-                <button class="chat-button"><img src="text-bubble-icon.png" alt="Chat"></button>
-                <button class="chat-button"><img src="three-dots-icon.png" alt="Options"></button>
-            </div>
-            <div id="user-info">
-                <p>General User Information</p>
-            </div>
-        </div>
-        <div id="right-container">
-            <div id="container2">
-                <div id="username">Username</div>
-                <div id="user-level">User Level</div>
-                <div id="game-list">
-                    <div class="game-item">
-                        <img src="game1.png" alt="Game 1">
-                        <p>Game 1</p>
-                    </div>
-                    <div class="game-item">
-                        <img src="game2.png" alt="Game 2">
-                        <p>Game 2</p>
-                    </div>
-                    <!-- Add more game items as needed -->
+    <table id="profile-table">
+        <tr>
+            <td><span class="icon"><ion-icon name="person"></ion-icon></span></td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <button class="btn"><span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span> Chat</button>
+                    <button class="btn"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span> Options</button>
                 </div>
-            </div>
-            <div id="container3">
-                <ul id="friends-list">
-                    <li>
-                        <div class="friend-profile">
-                            <img src="friend1.png" alt="Friend 1">
-                            <p>Friend 1</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="friend-profile">
-                            <img src="friend2.png" alt="Friend 2">
-                            <p>Friend 2</p>
-                        </div>
-                    </li>
-                    <!-- Add more friend items as needed -->
-                </ul>
-            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="user-info">
+                    <p>General User Information</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <div>
+            <p><b>Username</b></p>
+            <p>Level [number]</p>
         </div>
+    
+    <table id="Games-table">
+        <tr>
+            <th>Games</th>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <p>Game</p>
+                    <p>Afbeelding</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <p>Game</p>
+                    <p>Afbeelding</p>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <p>Game</p>
+                    <p>Afbeelding</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <p> </p>
+    <table id="Friends-table">
+        <tr>
+            <th>Friends</th>
+        </tr>
+        <tr>
+            <td>Afbeelding</td>
+            <td>Username</td>
+        </tr>
+        <tr>
+            <td>Afbeelding</td>
+            <td>Username</td>
+        </tr>
+        <tr>
+            <td>Afbeelding</td>
+            <td>Username</td>
+        </tr>
+    </table>
     </div>
 
-
     <script src="script.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
