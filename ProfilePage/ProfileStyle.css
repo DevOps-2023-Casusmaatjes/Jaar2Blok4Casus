@@ -111,5 +111,10 @@ th, td {
 }
 
 .icon {
-    size: 2;
+    font-size: 175px;
+    text-align: center;
+    line-height: 50%;
 }
+
+.marginP {
+    margin: 10px 0px;}
