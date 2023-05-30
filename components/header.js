@@ -1,4 +1,4 @@
-/*Template code from: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/*/
+/*Template code from: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 
 class Header extends HTMLElement {
     constructor() {
@@ -17,4 +17,4 @@ class Header extends HTMLElement {
   }
 }
 
-  customElements.define('header-component', Header);
+  customElements.define('header-component', Header);*/

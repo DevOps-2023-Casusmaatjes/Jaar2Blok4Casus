@@ -91,10 +91,6 @@ body {
     margin-top: 50px;
 }
 
-.header {
-    display: flex;
-    border: 1px solid #000000;
-}
 
 .footer {
     border-top: 1px solid #000000;
