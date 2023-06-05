@@ -1,24 +1,18 @@
+/*Template code from: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/*/
+
 class login extends HTMLElement {
     constructor() {
       super();
     }
   
   connectedCallback() {
-    /* use this if you want to use firebase login/register
-
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
-    <script src="firebase.js"></script>
-    
-    */
-
     this.innerHTML = `
     <div class="wrapper">
         
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="form-box login">
             <h2>Log in</h2>
-            <p> Enter user information to log into your existing account!</p>
+            <p> Enter user information to log into your excisting account!</p>
             <!--login form-->
             <form action="#" id="login-form">
                 
@@ -34,12 +28,12 @@ class login extends HTMLElement {
                 </div>
 
                 <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
+                    <label><input type="checkbox">Remeber me</label>
                     <a href="#">Forgot password?</a>
                 </div>
                 <button type="submit" class="btn">Log In</button>
                 <div class="login-register">
-                    <p>No existing account? <a href="#" class="register-link">Register here!</a></p>
+                    <p>No excisting account? <a href="#" class="register-link">Register here!</a></p>
                 </div>
             </form>
         </div>
@@ -87,8 +81,6 @@ class login extends HTMLElement {
         </div>
 <!--______________________________________________________________________________________________-->
     </div>
-
-
     `;
   }
 }

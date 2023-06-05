@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnPopup = document.querySelector('.btnLogin-popup');
     const iconClose = document.querySelector('.icon-close');
 
-    
     registerLink.addEventListener('click', () => {
         wrapper.classList.add('active');
     });
@@ -14,8 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
         wrapper.classList.remove('active');
     });
 
+    btnPopup.addEventListener('click', () => {
+        wrapper.classList.add('active-popup');
+    });
+
     iconClose.addEventListener('click', () => {
-        window.location.href = "../index.html";
+        wrapper.classList.remove('active-popup');
     });
 
     document.getElementById('login-form').addEventListener('submit', function(event) {
@@ -37,11 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function PasswordHasher(Pword) {
             const g = 31;
-            var hash = 0;
-            for (var i = 0; i < Pword.length; i++) {
-                hash = g * hash + Pword.charCodeAt(Pword.indexOf(Pword.charAt(i)));}
-            return hash;}
-
+            let hash = 0;
+            for (const letter in Pword) {
+                hash = g * hash + letter;
+            }
+            return hash;
+        }
 
         console.log('Register-Username:', username);
         console.log('Register-Email:', email);

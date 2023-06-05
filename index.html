@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device.width, initial-scale=1.0">
     <title>Website login/register page</title>
     <link rel="stylesheet" href="common.css">
-    <script src="../components/nicer_header.js" type="text/javascript" defer></script>
-    <script src="../components/login.js" type="text/javascript" defer></script>
+    <script src="components/nicer_header.js" type="text/javascript" defer></script>
+    <script src="components/login.js" type="text/javascript" defer></script>
+    <script src="common_script.js"></script>
 
 </head>
 
@@ -24,21 +25,11 @@
             <a href="AboutPage/About.html">About</a>
             
             <button class="btnLogin-popup">Login</button>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                const btnPopup = document.querySelector('.btnLogin-popup');
-        
-                btnPopup.addEventListener('click', () => {
-                    window.location.href = "LoginPage/login.html";
-                });
-            });
-            </script>
         </nav>
     </header>
+    <login-component></login-component>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-
 </body>
 </html>
