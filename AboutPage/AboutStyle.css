@@ -1,0 +1,39 @@
+#contributors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contributors ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#contributors li {
+    margin: 0 10px;
+}
+
+.contributor {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contributor:hover {
+    background-color: white;
+    color: rgba(48, 41, 144, 0.973);
+    pointer-events: none;
+}
+
+.contributor h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.contributor p {
+    font-size: 14px;
+}

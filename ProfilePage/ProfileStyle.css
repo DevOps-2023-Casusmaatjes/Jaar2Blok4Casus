@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Arial");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(48, 41, 144, 0.514);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header {
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(48, 41, 144, 0.514);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(40px);
+}
+
+.logo {
+    font-size: 2em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.0em;
+    color: white;
+    text-decoration: none;
+    font-weight: 470;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    margin-left: 40px;
+    border-radius: 5px;
+    left: -40px;
+    bottom: -6px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .4s;
+}
+
+.navigation a:hover::after{
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    outline: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.0em;
+    color: white;
+    font-weight: 470;
+    margin-left : 40px;
+    transition: .4s;
+}
+
+.navigation .btnLogin-popup:hover {
+    background: white;
+    color: black;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+th, td {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn {
+    padding: 10px 10px;
+    margin: 4px 2px;
+    background: rgba(48, 41, 144, 0.514);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+}
+
+.icon {
+    font-size: 175px;
+    text-align: center;
+    line-height: 50%;
+}

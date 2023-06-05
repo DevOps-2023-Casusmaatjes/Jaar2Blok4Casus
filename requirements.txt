@@ -1,0 +1,12 @@
+# How to fill the requirements.txt file with all the needed packages?
+
+## This will include all of the installed packages (even unused ones in this project).
+1. Open terminal.
+2. Go to the project folder / venv.
+3. "pip freeze > requirements.txt".
+
+## This will only include the installed AND used packages.
+1. Open terminal.
+2. Go to the project folder / venv.
+3. "pip install pipreqs".
+4. python3 -m pipreqs.pipreqs
