@@ -1,5 +1,19 @@
 {
+  "name": "jaar2blok4casus",
+  "version": "1.0.0",
+  "description": "- Required libraries, frameworks, hardware & software (note versions if needed).\r - Required external files (models, datasets) \r ## How to Use\r - UI\r - API calls (include examples!)\r ## Explanation of architecture / design\r - Application structure (components, services, linked software e.g. databases)\r - Data structures (e.g. database structure)\r - Diagrams (UML, Fritzing, Hardware, etc.)\r ## Development\r - What's necessary for further development (e.g. IDE's)?\r ## Credits\r - This README file is based on the template from an internal PowerPoint made by Eddy van den Aker, 2023.",
+  "main": "common_script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.0"
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
   }
 }
