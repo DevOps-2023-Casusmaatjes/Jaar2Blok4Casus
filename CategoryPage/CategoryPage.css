@@ -1,0 +1,215 @@
+.navbarcustom {
+    background-color: rgba(48, 41, 144, 0.514);
+    backdrop-filter: blur(40px);
+    padding:1%;
+    
+}
+  
+.custombtn {
+  vertical-align:middle;
+}
+  
+.navbarcustom {
+  position: relative;
+  background-color: rgba(48, 41, 144, 0.514);
+  backdrop-filter: blur(40px);
+  padding:1%;
+}
+  
+.product {
+  position: relative;
+  width: 100%; /* Adjust the width as desired */
+  height: 500px; /* Adjust the height as desired */
+  background-color: rgba(48, 41, 144, 0.514); /* Change the background color as desired */
+  /* Additional styles for the square container */
+}
+  
+.product-total {
+  position: relative;
+  width: 100%; /* Adjust the width as desired */
+  height: auto; /* Adjust the height as desired */
+  background-color: rgba(48, 41, 144, 0.514); /* Change the background color as desired */
+  /* Additional styles for the square container */
+}
+  
+.top-left {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+  
+.image-product {
+  width: 16vw; /* Adjust the width of the top left image as desired */
+  height: auto;
+  /* Additional styles for the top left image */
+}
+  
+.image-total {
+  width: 8vw; /* Adjust the width of the top left image as desired */
+  height: auto;
+  /* Additional styles for the top left image */
+}
+  
+.static-text {
+  margin-left: 10px; /* Adjust the spacing between the image and text as desired */
+  color: black;
+  /* Additional styles for the static text */
+}
+  
+.static-text-total {
+  text-align: right; /* Adjust the spacing between the image and text as desired */
+  color: black;
+  /* Additional styles for the static text */
+}
+
+.static-text-category {
+  margin-left: 10px; /* Adjust the spacing between the image and text as desired */
+  color: black;
+  padding-bottom: 10px;
+  /* Additional styles for the static text */
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+.container-2 {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: rgba(48, 41, 144, 0.514);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(48, 41, 144, 0.514);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.items-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items-1 undone-items-1;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.undone {
+  order: 3;
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input[type="checkbox"] {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items-1;
+}
+
+input[type="submit"] {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items-1;  
+}
+
+label {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  order: 4;
+
+  animation: undone .5s;
+}
+
+label::before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGHRFWHRBdXRob3IAbWluZWNyYWZ0aW5mby5jb23fZidLAAAAk0lEQVQ4y2P4//8/AyUYwcAD+OzN/oMwshjRBoA0Gr8+DcbIhhBlAEyz+qZZ/7WPryHNAGTNMOxpJvo/w0/uP0kGgGwGaZbrKgfTGnLc/0nyAgiDbEY2BCRGdCDCnA2yGeYVog0Aae5MV4c7Gzk6CRqAbDM2w/EaQEgzXgPQnU2SAcTYjNMAYm3GaQCxNuM0gFwMAPUKd8XyBVDcAAAAAElFTkSuQmCC'); /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em 'FontAwesome';
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input:checked + label::before {
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGHRFWHRBdXRob3IAbWluZWNyYWZ0aW5mby5jb23fZidLAAAAk0lEQVQ4y2P4//8/AyUYwcAD+OzN/oMwshjRBoA0Gr8+DcbIhhBlAEyz+qZZ/7WPryHNAGTNMOxpJvo/w0/uP0kGgGwGaZbrKgfTGnLc/0nyAgiDbEY2BCRGdCDCnA2yGeYVog0Aae5MV4c7Gzk6CRqAbDM2w/EaQEgzXgPQnU2SAcTYjNMAYm3GaQCxNuM0gFwMAPUKd8XyBVDcAAAAAElFTkSuQmCC'); /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}

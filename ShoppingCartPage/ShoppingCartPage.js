@@ -23,21 +23,39 @@ function removegame3(){
 function recalculate1(){
     var prijs = parseFloat(document.getElementById("price-game-1").innerHTML);
     var totaal = parseFloat(document.getElementById("total-id").innerHTML);
-    var grand = Math.round(totaal - (prijs * 1.05));
+    var subtotaal = parseFloat(document.getElementById("subtotaal-id").innerHTML);
+    var btw = parseFloat(document.getElementById("BTW-id").innerHTML);
+    var grandbtw = (btw - (prijs * 0.21)).toFixed(2);
+    var grandsubtotaal = (subtotaal - prijs).toFixed(2);
+    var grand = (totaal - (prijs * 1.21)).toFixed(2);
+    document.getElementById("BTW-id").innerHTML = grandbtw;
+    document.getElementById("subtotaal-id").innerHTML = grandsubtotaal;
     document.getElementById("total-id").innerHTML = grand;
 }
 
 function recalculate2(){
     var prijs = parseFloat(document.getElementById("price-game-2").innerHTML);
     var totaal = parseFloat(document.getElementById("total-id").innerHTML);
-    var grand = Math.round(totaal - (prijs * 1.05));
+    var subtotaal = parseFloat(document.getElementById("subtotaal-id").innerHTML);
+    var btw = parseFloat(document.getElementById("BTW-id").innerHTML);
+    var grandbtw = (btw - (prijs * 0.21)).toFixed(2);
+    var grandsubtotaal = (subtotaal - prijs).toFixed(2);
+    var grand = (totaal - (prijs * 1.21)).toFixed(2);
+    document.getElementById("BTW-id").innerHTML = grandbtw;
+    document.getElementById("subtotaal-id").innerHTML = grandsubtotaal;
     document.getElementById("total-id").innerHTML = grand;
 }
 
 function recalculate3(){
     var prijs = parseFloat(document.getElementById("price-game-3").innerHTML);
     var totaal = parseFloat(document.getElementById("total-id").innerHTML);
-    var grand = Math.round(totaal - (prijs * 1.05));
+    var subtotaal = parseFloat(document.getElementById("subtotaal-id").innerHTML);
+    var btw = parseFloat(document.getElementById("BTW-id").innerHTML);
+    var grandbtw = (btw - (prijs * 0.21)).toFixed(2);
+    var grandsubtotaal = (subtotaal - prijs).toFixed(2);
+    var grand = (totaal - (prijs * 1.21)).toFixed(2);
+    document.getElementById("BTW-id").innerHTML = grandbtw;
+    document.getElementById("subtotaal-id").innerHTML = grandsubtotaal;
     document.getElementById("total-id").innerHTML = grand;
 }
 

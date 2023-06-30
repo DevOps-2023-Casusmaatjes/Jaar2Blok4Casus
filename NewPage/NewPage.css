@@ -1,0 +1,10 @@
+
+.navbarcustom {
+  background-color: rgba(48, 41, 144, 0.514);
+  backdrop-filter: blur(40px);
+  padding:1%; 
+}
+  
+.custombtn {
+  vertical-align:middle;
+}

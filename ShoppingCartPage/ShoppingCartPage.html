@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/ShoppingCartPage/ShoppingCartPage.css">    
-    <link rel="stylesheet" href="../HomePageStyle.css"> 
+    <link rel="stylesheet" href="ShoppingCartPage.css">    
+    <link rel="stylesheet" href="../common.css"> 
     <script src="../components/nicer_header.js"></script>
     <title>ShoppingCartPage</title>
   </head>
@@ -17,8 +17,8 @@
       <div class="row gx-1 row-cols-3 mb-3">
         <div class="col-2"></div>
         <div class="col-8 navbarcustom">
-          <div class="row">
-            <div class="col-7 btn-group">
+          <div class="row"> 
+            <div class="col-7 btn-group"> 
               <a href="../StorePage/StorePage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Store</a>
               <a href="../NewPage/NewPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">New</a>
               <a href="../CategoryPage/CategoryPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Categories</a>
@@ -165,12 +165,12 @@
       <div class="container clearfix">
   
         <div class="left">
-          <h2 class="subtotal">Subtotal: <span>163.96</span>€</h2>
-          <h3 class="tax">Taxes (5%): <span>8.2</span>€</h3>
+          <h2 class="subtotal">Subtotaal: <span id="subtotaal-id">163.96</span>€</h2>
+          <h3 class="tax">BTW (21%): <span id="BTW-id">34.43</span>€</h3>
         </div>
   
         <div class="right">
-          <h1 class="total">Total: <span id="total-id">172.16</span>€</h1>
+          <h1 class="total">Total: <span id="total-id">198.39</span>€</h1>
           <a class="btn">Checkout</a>
         </div>
   

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/NewPage/NewPage.css">    
+    <link rel="stylesheet" href="/common.css">  
+    <script src="NewPage.js"></script>
+    <script src="../components/nicer_header.js"></script>
+
+    <title>ShoppingCartPage</title>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <div class="container-fluid">
+      <div class="row gx-1 row-cols-3 mb-3">
+        <div class="col-2"></div>
+        <div class="col-8 navbarcustom">
+          <div class="row">
+            <div class="col-7 btn-group">
+              <a href="../StorePage/StorePage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Winkel</a>
+              <a href="../NewPage/NewPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Nieuw</a>
+              <a href="../CategoryPage/CategoryPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Categorien</a>
+              <a href="/ShoppingCartPage/ShoppingCartPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Winkelmand</a>
+            </div>
+            <div class="col-4 btn-group">
+              <input class="form-control col-1" type="text" placeholder="Search">
+              <button class="btn btn-secondary col" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+        
+    </div>
+</body>
+</html>

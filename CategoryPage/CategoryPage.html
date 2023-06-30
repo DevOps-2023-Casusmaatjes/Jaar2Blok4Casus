@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/CategoryPage/CategoryPage.css">
+    <link rel="stylesheet" href="/common.css">     
+    <script src="CategoryPage.js"></script>
+    <script src="../components/nicer_header.js"></script>
+
+    <title>ShoppingCartPage</title>
+  </head>
+  <body>
+    <header-component></header-component>
+
+    <div class="container-fluid">
+      <div class="row gx-1 row-cols-3 mb-3">
+        <div class="col-2"></div>
+        <div class="col-8 navbarcustom">
+          <div class="row">
+            <div class="col-7 btn-group">
+              <a href="../StorePage/StorePage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Winkel</a>
+              <a href="../NewPage/NewPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Nieuw</a>
+              <a href="../CategoryPage/CategoryPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Categorien</a>
+              <a href="/ShoppingCartPage/ShoppingCartPage.html" class="btn btn-primary d-flex justify-content-center align-items-center" role="button">Winkelmand</a>
+            </div>
+            <div class="col-4 btn-group">
+              <input class="form-control col-1" type="text" placeholder="Search">
+              <button class="btn btn-secondary col" type="submit">Search</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+
+      <div class="row row-cols-3 mb-3">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="row">
+  
+            <div class="col-8">
+              <div class="product">
+                <a href="../GamePage/GamePage.html">
+                  <div class="top-left">
+                    <img src="/StorePage/Images/csgo/CSGO2_main_image.jpg" class="image-product" alt="Large Image">
+                    <div class="static-text">Info over de game + prijs</div>
+                  </div>
+                </a>
+                <div class="top-left">
+                  <img src="/StorePage/Images/codMW2/codMW2_main_foto.jpg" class="image-product" alt="Large Image">
+                  <div class="static-text">Info over de game + prijs</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-4">
+              <div class="container-2">
+                <h1>Categorien</h1>
+                <div class="items-1">
+                  <input id="item1" type="checkbox">
+                  <label for="item1">Avontuur</label>
+              
+                  <input id="item2" type="checkbox">
+                  <label for="item2">Actie</label>
+              
+                  <h2 class="done" aria-hidden="true">Geselecteeerd</h2>
+                  <h2 class="undone" aria-hidden="true">Niet Geselecteeerd</h2>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
