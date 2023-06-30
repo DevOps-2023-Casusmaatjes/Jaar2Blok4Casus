@@ -11,16 +11,27 @@ At minimum:
 // TODO: when a category, topic or post is created, all input fields should be sanitized / checked for injection / exploits.
 
 const CategoryAdd = document.querySelector(".add-category");
+const TopicAdd = document.querySelector(".add-topic");
 
 const DivContainer = document.getElementById("div-container");
 
 CategoryAdd.addEventListener("click", AddCategory);
+TopicAdd.addEventListener("click", AddTopic);
 
 function AddCategory(){
     const newDiv = document.createElement("div");
     newDiv.innerHTML = `
     <script src="../components/category-table.js" type="text/javascript" defer></script>
     <category-table-component></category-table-component>
+    `;
+    DivContainer.appendChild(newDiv);
+}
+
+function AddTopic(){
+    const newDiv = document.createElement("div");
+    newDiv.innerHTML = `
+    <script src="../components/topic-table.js" type="text/javascript" defer></script>
+    <topic-table-component></topic-table-component>
     `;
     DivContainer.appendChild(newDiv);
 }
